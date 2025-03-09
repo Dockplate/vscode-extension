@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/Dockplate/vscode-extension/compare/v0.2.1...v0.2.2) (2025-03-09)
+
+
+### Bug Fixes
+
+* lower VS Code engine requirement to support v1.96.2 ([b0d12df](https://github.com/Dockplate/vscode-extension/commit/b0d12dffd87bad624da05da2d016d667113e494a))
+
+
+
 ## [0.2.1](https://github.com/Dockplate/vscode-extension/compare/v0.2.0...v0.2.1) (2025-03-09)
 
 
