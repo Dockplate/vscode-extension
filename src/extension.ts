@@ -1,26 +1,36 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "dockplate" is now active!');
+	const disposable = vscode.commands.registerCommand('dockplate.selectDockerImage', async () => {
+		const url = 'https://raw.githubusercontent.com/Dockplate/dockerfiles/refs/heads/master/data/data.json';
+		const response = await fetch(url);
+		const data: string[] = await response.json() as string[];
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('dockplate.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from Dockplate!');
+		const capitalizedData = data.map((item: string) => item.charAt(0).toUpperCase() + item.slice(1));
+
+		const selectedOption = await vscode.window.showQuickPick(capitalizedData as any[], {
+			placeHolder: 'Select a Docker Image'
+		});
+
+		if (selectedOption) {
+			const lang = selectedOption.toLowerCase();
+			const workspaceFolder = vscode.workspace.workspaceFolders ? vscode.workspace.workspaceFolders[0] : undefined;
+			if (workspaceFolder) {
+				const dockerfilePath = vscode.Uri.joinPath(workspaceFolder.uri, 'Dockerfile');
+				const dockerfileUri = vscode.Uri.parse(dockerfilePath.toString());
+				const dockerfileUrl = `https://raw.githubusercontent.com/Dockplate/dockerfiles/refs/heads/master/${lang}/Dockerfile`;
+				const dockerfileResponse = await fetch(dockerfileUrl);
+				const dockerfileContent = await dockerfileResponse.text();
+				await vscode.workspace.fs.writeFile(dockerfileUri, Buffer.from(dockerfileContent));
+				vscode.window.showInformationMessage(`Dockerfile for ${selectedOption} created successfully!`);
+			} else {
+				vscode.window.showErrorMessage('Unable to create Dockerfile. No workspace folder found.');
+			}
+		}
 	});
 
 	context.subscriptions.push(disposable);
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}
