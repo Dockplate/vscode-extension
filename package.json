@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "dockplate.helloWorld",
-        "title": "Hello World"
+        "command": "dockplate.selectDockerImage",
+        "title": "Select a dockerimage"
       }
     ]
   },
