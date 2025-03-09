@@ -2,6 +2,10 @@
   "name": "dockplate",
   "displayName": "Dockplate",
   "description": "Dockplate offers ready-to-use templates for Dockerfiles, simplifying container setup and deployment",
+  "author": {
+    "name": "Adam Naji",
+    "email": "adam.webtools@gmail.com"
+  },
   "license": "MIT",
   "version": "0.1.0",
   "engines": {
