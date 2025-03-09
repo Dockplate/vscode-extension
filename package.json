@@ -10,10 +10,11 @@
     "url": "https://github.com/Dockplate/vscode-extension",
     "type": "git"
   },
+  "publisher": "Dockplate",
   "license": "MIT",
   "version": "0.2.1",
   "engines": {
-    "vscode": "^1.98.0"
+    "vscode": "^1.96.0"
   },
   "categories": [
     "Snippets"
