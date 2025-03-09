@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/Dockplate/vscode-extension/compare/v0.2.2...v0.2.3) (2025-03-09)
+
+
+### Bug Fixes
+
+* downgrade @types/vscode to match engines.vscode requirement ([4266b7c](https://github.com/Dockplate/vscode-extension/commit/4266b7cff455784606b4ebefe37474ecc794fd11))
+
+
+
 ## [0.2.2](https://github.com/Dockplate/vscode-extension/compare/v0.2.1...v0.2.2) (2025-03-09)
 
 
