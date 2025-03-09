@@ -1,4 +1,13 @@
-# 0.1.0 (2025-03-09)
+# [0.2.0](https://github.com/Dockplate/vscode-extension/compare/v0.1.0...v0.2.0) (2025-03-09)
+
+
+### Features
+
+* add MIT license ([ce64971](https://github.com/Dockplate/vscode-extension/commit/ce649713d06648898ab33ecbf6c4d08834a35e72))
+
+
+
+# [0.1.0](https://github.com/Dockplate/vscode-extension/compare/ef969f2b2a0270da5e11f9d84a045b04c2f9af12...v0.1.0) (2025-03-09)
 
 
 ### Features
