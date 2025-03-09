@@ -12,7 +12,7 @@ export async function selectDockerImage() {
             placeHolder: 'Select a Docker Image'
         });
 
-        if (!selectedOption) return;
+        if (!selectedOption) {return;}
 
         const lang = selectedOption.toLowerCase();
         const workspaceFolder = vscode.workspace.workspaceFolders?.[0];
