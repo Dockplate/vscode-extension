@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/Dockplate/vscode-extension/compare/v0.2.0...v0.2.1) (2025-03-09)
+
+
+### Bug Fixes
+
+* improve code readability by adding braces to conditional statement ([0558870](https://github.com/Dockplate/vscode-extension/commit/05588703b3bcab3a254c629bf046caa84987b009))
+
+
+
 # [0.2.0](https://github.com/Dockplate/vscode-extension/compare/v0.1.0...v0.2.0) (2025-03-09)
 
 
