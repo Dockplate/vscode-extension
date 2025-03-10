@@ -28,7 +28,7 @@ export async function downloadDockerfile(lang: string, workspaceFolder: vscode.W
                 `Dockerfile already exists. Do you want to overwrite it?`,
                 'Yes', 'No'
             );
-            if (overwrite !== 'Yes') return;
+            if (overwrite !== 'Yes') {return;}
         } catch (err) {
             // File does not exist, continue
         }
