@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/Dockplate/vscode-extension/compare/v0.5.0...v0.5.1) (2025-03-10)
+
+
+### Bug Fixes
+
+* eslint error ([dee8655](https://github.com/Dockplate/vscode-extension/commit/dee865548dba70fc684296417c09bbe4a78a24a7))
+
+
+
 # [0.5.0](https://github.com/Dockplate/vscode-extension/compare/v0.4.0...v0.5.0) (2025-03-10)
 
 
@@ -32,15 +41,6 @@
 ### Bug Fixes
 
 * downgrade @types/vscode to match engines.vscode requirement ([4266b7c](https://github.com/Dockplate/vscode-extension/commit/4266b7cff455784606b4ebefe37474ecc794fd11))
-
-
-
-## [0.2.2](https://github.com/Dockplate/vscode-extension/compare/v0.2.1...v0.2.2) (2025-03-09)
-
-
-### Bug Fixes
-
-* lower VS Code engine requirement to support v1.96.2 ([b0d12df](https://github.com/Dockplate/vscode-extension/commit/b0d12dffd87bad624da05da2d016d667113e494a))
 
 
 
