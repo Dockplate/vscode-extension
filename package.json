@@ -12,7 +12,7 @@
   },
   "publisher": "Dockplate",
   "license": "MIT",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "engines": {
     "vscode": "^1.96.0"
   },
