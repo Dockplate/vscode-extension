@@ -10,6 +10,7 @@
     "url": "https://github.com/Dockplate/vscode-extension",
     "type": "git"
   },
+  "icon": "./assets/logo.png",
   "publisher": "Dockplate",
   "license": "MIT",
   "version": "0.3.0",
