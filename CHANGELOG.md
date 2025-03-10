@@ -1,3 +1,13 @@
+# [0.5.0](https://github.com/Dockplate/vscode-extension/compare/v0.4.0...v0.5.0) (2025-03-10)
+
+
+### Features
+
+* add delay to open Dockerfile after creation ([0613c55](https://github.com/Dockplate/vscode-extension/commit/0613c552a658ad35f279a68d50d41c42fc5a481d))
+* add function to download and save Dockerfile from repository ([7946696](https://github.com/Dockplate/vscode-extension/commit/79466963f4f73b693e5ead5eba3c9bd1c9516028))
+
+
+
 # [0.4.0](https://github.com/Dockplate/vscode-extension/compare/v0.3.0...v0.4.0) (2025-03-10)
 
 
@@ -31,15 +41,6 @@
 ### Bug Fixes
 
 * lower VS Code engine requirement to support v1.96.2 ([b0d12df](https://github.com/Dockplate/vscode-extension/commit/b0d12dffd87bad624da05da2d016d667113e494a))
-
-
-
-## [0.2.1](https://github.com/Dockplate/vscode-extension/compare/v0.2.0...v0.2.1) (2025-03-09)
-
-
-### Bug Fixes
-
-* improve code readability by adding braces to conditional statement ([0558870](https://github.com/Dockplate/vscode-extension/commit/05588703b3bcab3a254c629bf046caa84987b009))
 
 
 
