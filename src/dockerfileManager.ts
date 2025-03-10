@@ -35,6 +35,16 @@ export async function downloadDockerfile(lang: string, workspaceFolder: vscode.W
 
         await vscode.workspace.fs.writeFile(dockerfilePath, Buffer.from(dockerfileContent));
         vscode.window.showInformationMessage(`Dockerfile for ${lang} created successfully!`);
+        // Wait for a short time to ensure the file system registers the new file
+        setTimeout(async () => {
+            try {
+                const document = await vscode.workspace.openTextDocument(dockerfilePath);
+                await vscode.window.showTextDocument(document);
+            } catch (err: any) {
+                vscode.window.showErrorMessage(`Failed to open Dockerfile: ${err.message}`);
+            }
+        }, 500);
+
     } catch (error: any) {
         vscode.window.showErrorMessage(`Failed to fetch Dockerfile: ${error.message}`);
     }
