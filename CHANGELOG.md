@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/Dockplate/vscode-extension/compare/v0.3.0...v0.4.0) (2025-03-10)
+
+
+### Features
+
+* create a workflow for build the extension and testing it [#6](https://github.com/Dockplate/vscode-extension/issues/6) ([c44b2c0](https://github.com/Dockplate/vscode-extension/commit/c44b2c0f1539e2b2b058c6fdd2de8fbe462baafb))
+
+
+
 # [0.3.0](https://github.com/Dockplate/vscode-extension/compare/v0.2.3...v0.3.0) (2025-03-10)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * improve code readability by adding braces to conditional statement ([0558870](https://github.com/Dockplate/vscode-extension/commit/05588703b3bcab3a254c629bf046caa84987b009))
-
-
-
-# [0.2.0](https://github.com/Dockplate/vscode-extension/compare/v0.1.0...v0.2.0) (2025-03-09)
-
-
-### Features
-
-* add MIT license ([ce64971](https://github.com/Dockplate/vscode-extension/commit/ce649713d06648898ab33ecbf6c4d08834a35e72))
 
 
 
